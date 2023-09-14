@@ -1,9 +1,14 @@
 # site-portfolio   
 
+
+### Link
 https://portfolio-rafaell.vercel.app/
 
-projeto desenvolvido para testar novas habilidades e desafios
-usando HTML, CSS e  JAVA SCRIPT( futuramente )
-
+#
+### deploy
 
 https://vercel.com
+
+#
+
+Projeto desenvolvido usando HTML, CSS e JAVA SCRIPT
