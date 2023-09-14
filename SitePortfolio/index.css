@@ -1,32 +1,51 @@
-body {
+
+
+/* transição para botao */
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+  
+  .animated-element {
+    /* Estilo inicial do elemento antes da animação */
+    clip-path: circle(100%);
+    transition: clip-path 2.5s cubic-bezier(.25, 1, .30, 1) both;
+  }
+  
+  .animated {
+    clip-path: circle(125%); /* Define o estado final da animação */
+  }
+
+  body {
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-
-
-
-
-}
-
-ul {
+  }
+  
+  ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     padding: 16px;
-    ;
+  }
+  
 
-
-
-
-
-
-}
-
-a {
-    color: white;
-    text-decoration: none;
-
-}
+  a {
+    color: white; /* Cor padrão do link */
+    text-decoration: none; /* Remova a sublinhado padrão */
+    transition: color 0.3s; /* Adicione uma transição de cor com duração de 0.3 segundos */
+  }
+  
+  a:hover {
+    color: orange; /* Cor do link quando o mouse está sobre ele */
+  }
 
 header img {
     width: 260px;
@@ -119,3 +138,4 @@ button{
     width: 100px;
     height: 30px;
 }
+
